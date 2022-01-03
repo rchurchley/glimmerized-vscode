@@ -6,11 +6,10 @@ import deepmerge from "deepmerge"
 
 const dark = {
   default:    { fg: white[0], bg: black[3]    },
-  inverted:   { fg: black[3], bg: white[0]    },
   alternate:  { fg: white[3], bg: black[2]    },
   minor:      { fg: gray[2]                   },
   accent:     { fg: magenta[5]                },
-  selection:  {               bg: purple[3]   },
+  selection:  {               bg: purple[5]   },
   primary:    { fg: white[3], bg: magenta[3], bgHover: magenta[5]  },
   secondary:  { fg: white[3], bg: blue[3]     },
   diff: {
@@ -42,7 +41,7 @@ const dark = {
     hint: blue[3],
   },
   syntax: [ magenta[5], blue[5], green[5], yellow[5], purple[5] ],
-  ansi: { red: magenta[5], green: green[5], blue: blue[5], cyan: gray[5], magenta: purple[5], yellow: yellow[5], black: black[3], white: white[0], brightRed: magenta[3], brightGreen: green[3], brightBlue: blue[3], brightCyan: gray[3], brightMagenta: purple[3], brightYellow: yellow[3], brightBlack: black[0], brightWhite: white[3] },
+  ansi: { red: magenta[5], green: green[5], blue: blue[5], cyan: gray[2], magenta: purple[5], yellow: yellow[5], black: black[3], white: white[0], brightRed: magenta[3], brightGreen: green[3], brightBlue: blue[3], brightCyan: gray[1], brightMagenta: purple[3], brightYellow: yellow[3], brightBlack: black[0], brightWhite: white[3] },
 }
 
 const darker = deepmerge(dark, {
@@ -59,11 +58,10 @@ const darkest = deepmerge(dark, {
 
 const light = {
   default:    { fg: black[3], bg: white[0]    },
-  inverted:   { fg: white[0], bg: black[3]    },
   alternate:  { fg: black[0], bg: white[1]    },
   minor:      { fg: gray[1]                   },
   accent:     { fg: magenta[3]                },
-  selection:  {               bg: purple[5]   },
+  selection:  {               bg: purple[3]   },
   primary:    { fg: white[3], bg: magenta[3], bgHover: magenta[5]  },
   secondary:  { fg: white[3], bg: blue[3]     },
   diff: {
@@ -93,7 +91,7 @@ const light = {
     hint: blue[5],
   },
   syntax: [ magenta[3], blue[3], green[3], yellow[3], purple[3] ],
-  ansi: { red: magenta[3], green: green[3], blue: blue[3], cyan: gray[3], magenta: purple[3], yellow: yellow[3], black: black[3], white: white[0], brightRed: magenta[5], brightGreen: green[5], brightBlue: blue[5], brightCyan: gray[5], brightMagenta: purple[5], brightYellow: yellow[5], brightBlack: black[0], brightWhite: white[3] },
+  ansi: { red: magenta[3], green: green[3], blue: blue[3], cyan: gray[1], magenta: purple[3], yellow: yellow[3], black: black[3], white: white[0], brightRed: magenta[5], brightGreen: green[5], brightBlue: blue[5], brightCyan: gray[2], brightMagenta: purple[5], brightYellow: yellow[5], brightBlack: black[0], brightWhite: white[3] },
 }
 
 const lighter = deepmerge(light, {

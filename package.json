@@ -3,7 +3,7 @@
   "publisher": "rchurchley",
   "displayName": "Glimmerized",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/rchurchley/glimmerized-vscode",
   "type": "module",
   "engines": {
@@ -19,7 +19,7 @@
     "deepmerge": "^4.2.2",
     "glimmerized": "git+https://github.com/rchurchley/glimmerized.git",
     "mustache": "^4.2.0",
-    "vsce": "^2.5.1"
+    "vsce": "^2.6.3"
   },
   "contributes": {
     "themes": [
